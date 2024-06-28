@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="formularioProductos.css"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section id="content">
+
+        <h1>Registrate</h1>
+        <br>
+        <form action="formularioproductos.php" method="Post">
+            <p>
+                <label for="nombre">Nombre: </label>
+                <input type="text" name="nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+
+            </p>
+
+            <p>
+                <label for="categoria" class="colocar_categoria">categoria: </label>
+                <input type="text" name="categoria" id="categoria" required="obligatorio" placeholder="la categoria de tu producto">
+            </p>
+
+            <p>
+                <label for="precio" class="colocar_precio">precio: </label>
+                <input type="number" name="precio" id="precio" required="obligatorio" placeholder="Escribe el preico del producto">
+            </p>
+
+            <p>
+                <label for="imagen" class="colocar_imagen">imagen: </label>
+                <input type="text" name="imagen" id="imagen" required="obligatorio" placeholder="ingresa tu imagen">
+            </p>
+
+            <button class="btn" type="submit" name="registar" id="registrar" > <p><h4>Registrarse</h4></p></button>
+           <!--<button type="submit" name="registar" id="registrar"> <p>Registar Aqui </p></button> --> 
+
+        </form>
+        </section>
+
+</body>
+</html>

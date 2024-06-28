@@ -1,0 +1,390 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    font-family: 'roboto', sans-serif;
+    margin: 0;
+}
+
+
+h1{font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.25;}
+ul{list-style:none ;}
+li{font-size: 1.3em;}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border:1px solid rgb(0,0,0,0.5);
+    box-shadow: 2px 2px 10px rgb(0,0,0,0.5);
+    color: beige;
+    background-color:hotpink;
+
+}
+
+button:hover{
+    background-color: rgb(214, 16, 115);
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{
+    color:blueviolet;
+}
+
+header{
+    background-color:beige;
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color:darkmagenta;
+    font-size: 2em;
+
+}
+
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25;
+
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color:darksalmon;
+}
+
+header a:hover{
+    color:blueviolet;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: beige;
+    background-image: url("media/ramodeportada.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    
+}
+
+#hero h1{
+    color:aliceblue;
+
+}
+#hero button{
+    font-size: 1.7em;
+}
+
+#bella-amor{
+text-align: right;
+}
+
+#bella-amor .container{
+    text-align: center;
+    padding: 200px 12px;
+
+
+
+}
+
+
+
+
+
+
+#nuestros-productos{
+    background-color: rgb(221, 199, 232);
+    color:aliceblue; 
+    text-align: center;
+}
+
+#nuestros-productos .container{
+   padding: 150px 12px;
+
+
+}
+
+#nuestros-productos h2{
+    margin-top: 0;
+    font-size: 3.3em;
+
+}
+
+#nuestros-productos p{
+    display: none;
+
+}
+
+#nuestros-productos .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.carta:first-child{
+background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+
+)
+,url("media/ramoRosa.jpg");
+
+
+
+
+
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    
+    )
+    ,url("media/pastelChocolate.jpg");
+
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    
+    )
+    ,url("media/osoGigante.jpg");
+    
+}
+
+
+#caracteristicas .container{
+text-align: center;
+padding: 200px 12px;
+font-size: 10px;
+
+}
+
+#caracteristicas .container >h1{
+   color: hotpink;
+  text-align: center;
+   
+}
+#caracteristicas .container >h2{
+    color:cornflowerblue;
+    
+ }
+ #caracteristicas .container >a{
+    font-size: 20px;
+ }
+
+#registro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(202, 157, 224);
+    color:aliceblue;
+    height: 80;
+}
+
+#registro button{
+    font-size: 9vw;
+}
+
+#registro h2{
+    font-size: 9vw;
+
+}
+
+footer{
+    background-color: blanchedalmond;
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(100,100,100);
+
+}
+
+footer .container{
+height: 150px;
+display: flex;
+justify-content: center;
+align-items: flex-end;
+}
+
+@media (min-width: 720px){
+
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        scroll-padding-right: 20px;
+    }
+    #bella-amor .container{
+        display: flex;
+         background-size: cover;
+  background-position: center center;
+  height: 500px;
+  text-align: center;
+}
+
+#bella-amor .texto{
+    width: 50%;
+    text-align: initial;
+}
+
+#bella-amor .img-container{
+ 
+ }
+
+ #nuestros-productos .productos{
+    display: flex;
+    justify-content: center;
+
+ }
+
+ #nuestros-productos p{
+    display: block;
+    margin-bottom: 30px;
+ }
+
+ nuestros-productos h3{
+    margin-top: 0;
+ }
+
+
+ }
+
+ #nuestros-productos .carta{
+    padding: 15px;
+
+ }
+
+ 
+
+ #caracteristicas .container{
+    text-align: initial;
+ }
+
+ #caracteristicas ul{
+    margin-left: 100px;
+    text-align: left;
+ }
+ #final h2{
+font-size: 5em;
+ }
+
+ #final button{
+font-size: 2em 
+ }
+
+ #maps .container{
+   
+    height: 550px;
+    
+    align-content: center;
+ }
+ #maps .container >h1{
+   color: hotpink;
+   text-align: center;
+   font-size: 30px;
+ }
+
+footer .container{
+    justify-content: flex-end;
+    height: 50px;
+    align-content: center;
+
+}
+
+footer h1{
+  text-align: center;
+  font-size: 20px;
+  color: cornflowerblue;
+
+}
+footer .container >img{
+  align-content: center;
+  
+  }
+
+
+
+ @media (min-width: 1200px){
+    #caracteristicas{
+        background-position-x: calc(100vw - 800px) ;
+    }
+ }
+
+
+ section .mid-page{
+    background-size: cover;
+ }
+
+#mid-page >H1{
+   text-align: center;
+ }
+
+ 
+ #mid-page .video{
+    align-content: center;
+ }
+
+ #caracteristicas .container> h1{
+    text-align: center;
+ }
+
+
+
+
+
+
